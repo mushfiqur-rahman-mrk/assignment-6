@@ -6,8 +6,14 @@
     <title>Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="image/fav icon.png">
 </head>
 <body>
+  <!-- title -->
+  <div>
+    <h1></h1>
+  </div>
+
     <!-- go back home -->
     <div class="text-center mt-6">
         <button class="btn btn-secondary text-white"> 
@@ -15,48 +21,75 @@
         </button>
     </div>
     <!-- card 1 -->
-    <section class="text-gray-600 body-font overflow-hidden">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="w-full mx-auto flex flex-wrap">
-            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto object-cover object-center rounded" src="image/null.jpg">
-            <div class="lg:w-1/2  w-full lg:pl-10 lg:py-6 mt-4 lg:mt-0">
+    <section class="text-gray-600 body-font overflow-hidden mb-4 ">
+        <div class="container px-5 pb-16 mt-10 mx-auto rounded-xl shadow-xl">
+          <div class="w-full mx-auto flex flex-wrap ">
+            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto object-cover object-center rounded" src="image/var let const.jpg">
+            <div class="lg:w-1/2  w-full lg:pl-10 lg:mt-0">
                
-              <h1 class="text-gray-900 text-5xl title-font font-bold mb-1">The Catcher in the Rye</h1>
+              <h1 class="text-gray-900 text-4xl title-font font-bold mt-4 mb-1">Scope of Var Let and Const</h1>
                
-              <p class="leading-relaxed pt-6 text-2xl">Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean shorts keytar banjo tattooed umami cardigan.</p>
+              <p class="leading-relaxed pt-6 text-lg">In JavaScript, variables  can be declared using three different methods: var, let, and const.
+                Lets see the differences between these keywords to have a better understanding of what to use when.<br>
+                Scope essentially means where these variables are available for use.
+                There are two types of scopes in JS:<br> 
+                <b>Function Scope:</b> Visibility is limited to the function.<br>
+                <b>Block Scope:</b> Visibility is limited to the block of code.<br>
+                
+                Now we have idea of scope. Let discuss the scope of var, let and const.
+                
+                Var declarations are function scoped.
+                Let declarations are block scoped.
+                Const declarations are block scoped.</p>
             </div>
           </div>
         </div>
       </section>
 
       <!-- card 2 -->
-      <section class="text-gray-600 body-font overflow-hidden">
-        <div class="container px-5 py-10 mx-auto">
-          <div class="w-full mx-auto flex flex-wrap">
-            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto object-cover object-center rounded" src="image/rest api.jpg">
-            <div class="lg:w-1/2  w-full lg:pl-10 lg:py-6 mt-2 lg:mt-0">
+      <section class="text-gray-600 body-font overflow-hidden mb-4 ">
+        <div class="container px-5 pb-16 mt-10 mx-auto rounded-xl shadow-xl">
+          <div class="w-full mx-auto flex flex-wrap ">
+            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto object-cover object-center rounded" src="image/null.jpg">
+            <div class="lg:w-1/2  w-full lg:pl-10 lg:mt-0">
                
-              <h1 class="text-gray-900 text-5xl title-font font-bold mb-1">The Catcher in the Rye</h1>
+              <h1 class="text-gray-900 text-4xl title-font font-bold mt-4 mb-1">All about Null and Undefined</h1>
                
-              <p class="leading-relaxed pt-6 text-2xl">Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean shorts keytar banjo tattooed umami cardigan.</p>
+              <p class="leading-relaxed pt-6 text-lg">We all come across null, undefined in our coding journey.
+
+              Null and undefined are both values usually used to indicate the absence of something.<br><br>
+                
+                Null represents an empty value and carry no meaningful information.
+                If you use the typeof operator on null, it shows that null is an object.In fact, null is one of the primitive values in JavaScript.<br><br>
+                
+                
+                Undefined represents any value that has not been defined anywhere in the program.
+                If any variable or operation isn't able to produce a meaningful value, it returns undefined.</p>
             </div>
           </div>
         </div>
       </section>
       <!-- card 3 -->
-      <section class="text-gray-600 body-font overflow-hidden">
-        <div class="container px-5 py-20 mx-auto">
-          <div class="w-full mx-auto flex flex-wrap">
-            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto object-cover object-center rounded" src="image/var let const.jpg">
-            <div class="lg:w-1/2  w-full lg:pl-10 lg:py-6 mt-4 lg:mt-0">
+      <section class="text-gray-600 body-font overflow-hidden mb-4 ">
+        <div class="container px-5 pb-16 mt-10 mx-auto rounded-xl shadow-xl">
+          <div class="w-full mx-auto flex flex-wrap ">
+            <img alt="ecommerce w-full object-contain object-center" class="lg:w-1/2 w-full lg:h-auto object-cover object-center rounded" src="image/rest api.jpg">
+            <div class="lg:w-1/2  w-full lg:pl-8 lg:mt-0">
                
-              <h1 class="text-gray-900 text-5xl title-font font-bold mb-1">The Catcher in the Rye</h1>
+              <h1 class="text-gray-900 text-4xl title-font font-bold mt-4 mb-1">REST API Introduction</h1>
                
-              <p class="leading-relaxed pt-6 text-2xl">Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean shorts keytar banjo tattooed umami cardigan.</p>
+              <p class="leading-relaxed pt-6 text-lg">Representational State Transfer or REST is an architectural style that defines a set of constraints to be used for creating web services. REST API is a way of accessing web services in a simple and flexible way without having any processing.<br>
+
+                REST technology is generally preferred to the more robust Simple Object Access Protocol (SOAP) technology because REST uses less bandwidth, simple and flexible making it more suitable for internet usage. It’s used to fetch or give some information from a web service. All communication done via REST API uses only HTTP request.</p>
             </div>
           </div>
         </div>
       </section>
+
+       
+
     
 </body>
 </html>
+ 
+ 

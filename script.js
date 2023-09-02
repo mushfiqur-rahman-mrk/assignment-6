@@ -2,12 +2,12 @@
 const loadcategory = async()=>{
     const response= await fetch(`https://openapi.programming-hero.com/api/videos/categories`)
     const data= await response.json();
-    // let use = data.data; 
+    // console.log(data)
     const categorycontainer=document.getElementById('tabContainer')
-    // const category = displayCategory(data.data);   
+    
     data.data.forEach(category => { 
       categorycontainer.innerHTML += `
-      <button onclick="handlecategory('${category.category_id}')" class="bg-blue-100 active:bg-red-500 px-6 py-2"  id="${category.category_id}">${category.category}</button>
+      <button onclick="handlecategory('${category.category_id}')" class="bg-blue-100 active:bg-red-500 px-6 py-2 rounded-xl "  id="${category.category_id}">${category.category}</button>
       `;    
 
     });
